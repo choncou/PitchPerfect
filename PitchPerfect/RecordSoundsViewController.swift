@@ -18,7 +18,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     var audioRecorder: AVAudioRecorder!
     
     @IBAction func recordAudio(sender: UIButton) {
-        recordingLabel.text = "Recording ..."
+        recordingLabel.text = "Recording... Tap to Pause"
         
         if let audioRecorder = audioRecorder{
             if audioRecorder.recording{
